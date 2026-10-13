@@ -5,25 +5,25 @@ let
 in
 {
   home-manager.users.${user} =
-      let
-        gitName = config.common.username;
-        gitEmail = config.common.email;
-      in
-      {
-        pkgs,
-        lib,
-        ...
-      }:
-      {
-        imports = [ ./home-manager.nix ];
-        programs.git = {
-          enable = true;
-          settings.user = {
-            name = gitName;
-            email = gitEmail;
-          };
+    let
+      gitName = config.common.username;
+      gitEmail = config.common.email;
+    in
+    {
+      pkgs,
+      lib,
+      ...
+    }:
+    {
+      imports = [ ./home-manager.nix ];
+      programs.git = {
+        enable = true;
+        settings.user = {
+          name = gitName;
+          email = gitEmail;
         };
       };
+    };
 
   users.users.${user} = {
     isNormalUser = true;
