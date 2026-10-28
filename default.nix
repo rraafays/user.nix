@@ -65,6 +65,7 @@ in
       gnome-boxes
       gnome-mahjongg
       gnome-obfuscate
+      gnome-sound-recorder
       impression
       junction
       mpv
