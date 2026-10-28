@@ -1,9 +1,20 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   user = config.common.username;
 in
 {
+  nixpkgs.config.allowUnfree = true;
+
+  networking.networkmanager.enable = true;
+
+  system.stateVersion = lib.mkDefault "26.05";
+
   home-manager.users.${user} =
     let
       gitName = config.common.username;
@@ -54,22 +65,16 @@ in
       gnome-boxes
       gnome-mahjongg
       gnome-obfuscate
-      gnome-sound-recorder
-      gnomeExtensions.audio-switch-shortcuts
       impression
       junction
       mpv
       multiplex
-      nootka
       paper-clip
       pika-backup
-      pwvucontrol
       rawtherapee
-      reaper
       rockbox-utility
       switcheroo
       tor-browser
-      tuxguitar
       ungoogled-chromium
       valuta
       video-trimmer
