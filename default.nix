@@ -59,6 +59,7 @@ in
       dialect
       eartag
       eyedropper
+      firefox
       fragments
       fretboard
       gimp3
@@ -76,7 +77,6 @@ in
       rockbox-utility
       switcheroo
       tor-browser
-      ungoogled-chromium
       valuta
       video-trimmer
       wechat
