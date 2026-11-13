@@ -45,6 +45,7 @@ in
     ];
     packages = with pkgs; [
       amberol
+      android-tools
       apostrophe
       audio-sharing
       blanket
