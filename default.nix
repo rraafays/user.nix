@@ -78,6 +78,7 @@ in
       rockbox-utility
       switcheroo
       tor-browser
+      tuxguitar
       valuta
       video-trimmer
       wechat
