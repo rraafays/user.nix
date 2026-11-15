@@ -82,6 +82,7 @@ in
       valuta
       video-trimmer
       wechat
+      zathura
     ];
   };
 }
